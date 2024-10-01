@@ -1,0 +1,10 @@
+.footer {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #992f4d;
+    color: #e8b787;
+    border-top: 1px solid #678;
+    flex-shrink: 0; 
+}

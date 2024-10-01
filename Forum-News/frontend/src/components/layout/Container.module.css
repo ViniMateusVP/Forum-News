@@ -1,0 +1,7 @@
+.container {
+    min-height: 60vh;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 0px;
+  }

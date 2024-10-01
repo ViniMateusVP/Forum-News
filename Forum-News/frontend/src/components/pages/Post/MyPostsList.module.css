@@ -1,0 +1,303 @@
+.postsListWrapper {
+  display: flex; 
+  flex-direction: row; 
+  gap: 1em; 
+  width: 100%; 
+}
+
+h1 {
+  margin-left: 60px;
+}
+
+.scrollablePostsContainer {
+  overflow-x: auto; 
+  padding: 1em;
+  overflow-y: hidden; 
+}
+
+.postItem {
+  flex: 0 0 auto; 
+  width: 400px; 
+  height: 350px; 
+  transition: background-color 0.3s; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f25872;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+}
+
+.postForm {
+  flex: 0 0 auto;
+  align-items: center;
+  scroll-snap-align: start; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+.postItem p {
+  word-break: break-word; 
+  overflow-wrap: break-word; 
+  text-align: center; 
+  font-size: 1.2em; 
+  line-height: 1.4; 
+  font-family: "Arial", sans-serif; 
+  white-space: normal; 
+}
+
+textarea,
+textarea::placeholder {
+  color: #e8b787;
+}
+
+.postItem::-webkit-scrollbar {
+  width: 12px; 
+}
+
+.postItem::-webkit-scrollbar-track {
+  background: #e8b787; 
+  border-radius: 10px; 
+}
+
+.postItem::-webkit-scrollbar-thumb {
+  background: #f93560; 
+  border-radius: 10px; 
+}
+
+.postItem::-webkit-scrollbar-thumb:hover {
+  background: #f93560; 
+}
+
+.postItem:hover,
+textarea:hover {
+  transition: background-color 0.3s;
+  background-color: #f93560; 
+}
+
+.scrollablePostsContainer {
+  overflow-x: auto; 
+}
+
+.scrollablePostsContainer::-webkit-scrollbar {
+  height: 12px; 
+}
+
+.scrollablePostsContainer::-webkit-scrollbar-track {
+  background: #e8b787; 
+  border-radius: 10px; 
+}
+
+.scrollablePostsContainer::-webkit-scrollbar-thumb {
+  background: #f93560; 
+  border-radius: 10px; 
+}
+
+.scrollablePostsContainer::-webkit-scrollbar-thumb:hover {
+  background: #f93560; 
+}
+
+.createPostContainer {
+  padding: 1em; 
+  border-radius: 10px; 
+  margin-bottom: 1em; 
+}
+
+.createPostForm {
+  display: flex; 
+  flex-direction: column; 
+  gap: 1em; 
+  font-size: 1.5em;
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+}
+
+.newPostTextArea {
+  width: 400px; 
+  height: 280px; 
+  resize: none; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em; 
+  font-family: "Arial", sans-serif; 
+  box-sizing: border-box; 
+  text-align: center; 
+  overflow-y: auto; 
+  line-height: 1.5; 
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+  background-color: #f25872;
+  margin-top: 40px;
+}
+
+.newPostTextArea::-webkit-scrollbar {
+  width: 12px; 
+}
+
+.newPostTextArea::-webkit-scrollbar-track {
+  background: #e8b787; 
+  border-radius: 10px; 
+}
+
+.newPostTextArea::-webkit-scrollbar-thumb {
+  background: #f93560; 
+  border-radius: 10px; 
+}
+
+.newPostTextArea::-webkit-scrollbar-thumb:hover {
+  transition: background-color 0.3s;
+  background: #6d0f23; 
+}
+
+.createPostButton {
+  padding: 0.5em 1em; 
+  background-color: #f25872; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 1em; 
+  transition: background-color 0.3s; 
+}
+
+.createPostButton:hover {
+  background-color: #f93560; 
+}
+
+.noPostsMessage {
+  margin: auto;
+  margin-bottom: 70px;
+  padding-bottom: 145px;
+  height: 100%; 
+  text-align: center; 
+  font-size: 1.2em; 
+}
+
+.createPostButton {
+  padding: 0.5em 1em; 
+  background-color: #f25872; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 1em; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.createPostButton:hover {
+  background-color: #f93560; 
+  transform: translateY(-2px); 
+}
+
+.createPostButton:active {
+  transform: translateY(0); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.navigationButton {
+  padding: 0.5em 1em; 
+  background-color: #e8b787; 
+  color: #333; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 1em; 
+  margin: 0.5em; 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.navigationButton:hover {
+  background-color: #d4a058; 
+  transform: translateY(-2px); 
+}
+
+.navigationButton:active {
+  transform: translateY(0); 
+}
+
+.postItem {
+  position: relative; 
+}
+
+.hoverButtons {
+  display: none; 
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  gap: 10px; 
+}
+
+.postItem:hover .hoverButtons {
+  display: flex; 
+}
+
+.markerContainer {
+  position: absolute; 
+  right: -30px; 
+  bottom: -120px; 
+  cursor: pointer; 
+
+  width: 100px;
+  transform: rotate(45deg);
+}
+
+.marker {
+  width: 8px; 
+  height: 160px; 
+  width: 80px; 
+  background-color: #cc3d54; 
+  transition: background-color 0.3s, width 1s; 
+}
+
+.marker.active {
+  background-color: #8a1e30; 
+}
+
+.postHeader {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.postHeader span {
+  font-weight: bold;
+  color: #333;
+}
+
+.deleteContainer {
+  opacity: 0;
+  position: absolute; 
+  right: 5px; 
+  top: -5px; 
+  cursor: pointer; 
+  color: #333;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s ease;
+}
+
+.postItem:hover .deleteContainer {
+  opacity: 1;
+}
+
+.deleteIcon {
+  transition: background-color 0.3s, font-size 1s;
+  font-size: 50px; 
+}
+
+.deleteIcon:hover {
+  transition: background-color 0.3s, font-size 1s;
+  color: #8a1e30;
+  font-size: 55px; 
+}
